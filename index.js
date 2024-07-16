@@ -39,7 +39,7 @@ function formatValidator(req, res, next) {
 
   //checking if Cast is an Array or not.
   if (!Array.isArray(Cast)) {
-    errors.push("Genre should be a string.");
+    errors.push("Cast should be an array.");
   } else if (!Cast.every((element) => typeof element === "string")) { // checking every element in an array is string or not.
     errors.push("Each item of Cast array should be a string.");
   }
